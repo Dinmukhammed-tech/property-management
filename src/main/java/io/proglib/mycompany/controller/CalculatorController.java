@@ -1,6 +1,6 @@
 package io.proglib.mycompany.controller;
 
-import io.proglib.mycompany.model.CalculatorDTO;
+import io.proglib.mycompany.dto.CalculatorDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

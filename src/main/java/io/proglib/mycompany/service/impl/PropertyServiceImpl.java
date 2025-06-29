@@ -2,7 +2,7 @@ package io.proglib.mycompany.service.impl;
 
 import io.proglib.mycompany.converter.PropertyConverter;
 import io.proglib.mycompany.entity.PropertyEntity;
-import io.proglib.mycompany.model.PropertyDTO;
+import io.proglib.mycompany.dto.PropertyDTO;
 import io.proglib.mycompany.repository.PropertyRepository;
 import io.proglib.mycompany.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;

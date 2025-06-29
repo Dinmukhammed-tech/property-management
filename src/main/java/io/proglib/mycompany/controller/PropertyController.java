@@ -1,6 +1,6 @@
 package io.proglib.mycompany.controller;
 
-import io.proglib.mycompany.model.PropertyDTO;
+import io.proglib.mycompany.dto.PropertyDTO;
 import io.proglib.mycompany.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

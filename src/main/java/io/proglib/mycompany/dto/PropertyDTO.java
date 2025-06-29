@@ -1,4 +1,4 @@
-package io.proglib.mycompany.model;
+package io.proglib.mycompany.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

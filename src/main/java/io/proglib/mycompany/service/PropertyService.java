@@ -1,6 +1,6 @@
 package io.proglib.mycompany.service;
 
-import io.proglib.mycompany.model.PropertyDTO;
+import io.proglib.mycompany.dto.PropertyDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

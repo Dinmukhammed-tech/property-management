@@ -1,7 +1,7 @@
 package io.proglib.mycompany.converter;
 
 import io.proglib.mycompany.entity.PropertyEntity;
-import io.proglib.mycompany.model.PropertyDTO;
+import io.proglib.mycompany.dto.PropertyDTO;
 import org.springframework.stereotype.Component;
 
 @Component
