@@ -35,7 +35,7 @@ public class PropertyController {
 
     @GetMapping("/properties")
     public ResponseEntity<List<PropertyDTO>> getAllProperties() {
-        System.out.println(dummy);
+        System.out.println("This is "+dummy);
         return new ResponseEntity(propertyService.getAllProperties(),HttpStatus.OK);
     }
 
