@@ -1,6 +1,7 @@
 package io.proglib.mycompany.controller;
 
 import io.proglib.mycompany.dto.UserDTO;
+import io.proglib.mycompany.exception.BusinessException;
 import io.proglib.mycompany.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,7 +18,11 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/register")
-    public ResponseEntity<UserDTO> register(@RequestBody UserDTO user) {
+    public ResponseEntity<UserDTO> register(@RequestBody UserDTO user) throws BusinessException {
         return new ResponseEntity<>(userService.register(user), HttpStatus.CREATED);
+    }
+    @PostMapping("/login")
+    public ResponseEntity<UserDTO> login(@RequestBody UserDTO user) throws BusinessException {
+        return new ResponseEntity<>(userService.login(user.getOwnerEmail(), user.getPassword()), HttpStatus.OK);
     }
 }
