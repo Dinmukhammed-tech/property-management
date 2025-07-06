@@ -1,0 +1,49 @@
+2025-07-07 00:13:38,658 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-07-07 00:13:38,703 INFO i.p.m.MycompanyApplication [main] Starting MycompanyApplication using Java 22.0.1 with PID 4512 (C:\Users\user\Downloads\updated_blog\mycompany\target\classes started by user in C:\Users\user\Downloads\updated_blog\mycompany)
+2025-07-07 00:13:38,704 INFO i.p.m.MycompanyApplication [main] The following 1 profile is active: "dev"
+2025-07-07 00:13:39,414 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-07 00:13:39,475 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2025-07-07 00:13:39,918 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-07 00:13:39,933 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-07 00:13:39,935 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2025-07-07 00:13:39,936 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-07 00:13:39,986 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2025-07-07 00:13:39,986 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1246 ms
+2025-07-07 00:13:40,154 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-07 00:13:40,195 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-07 00:13:40,239 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-07-07 00:13:40,498 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-07 00:13:40,526 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-07-07 00:13:40,676 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13dc6649
+2025-07-07 00:13:40,677 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-07-07 00:13:40,718 WARN o.h.d.Dialect [main] HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-07-07 00:13:40,722 WARN o.h.o.deprecation [main] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-07 00:13:40,740 INFO o.h.o.c.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-07 00:13:41,756 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-07 00:13:41,845 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-07 00:13:42,196 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-07 00:13:42,570 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-07 00:13:42,587 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-07 00:13:42,594 INFO i.p.m.MycompanyApplication [main] Started MycompanyApplication in 4.382 seconds (process running for 5.177)
+2025-07-07 00:14:56,694 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-07 00:14:56,694 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-07-07 00:14:56,696 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2025-07-07 00:14:57,032 INFO i.p.m.e.CustomExceptionHandler [http-nio-8080-exec-1] Inside field validation: password - Password can not be empty
+2025-07-07 00:14:57,034 INFO i.p.m.e.CustomExceptionHandler [http-nio-8080-exec-1] Inside field validation: ownerEmail - Owner Email is mandatory
+2025-07-07 00:14:57,034 INFO i.p.m.e.CustomExceptionHandler [http-nio-8080-exec-1] Inside field validation: password - Password can not be null
+2025-07-07 00:14:57,034 INFO i.p.m.e.CustomExceptionHandler [http-nio-8080-exec-1] Inside field validation: ownerEmail - Owner Email can not be empty
+2025-07-07 00:19:37,567 INFO i.p.m.e.CustomExceptionHandler [http-nio-8080-exec-7] BusinessException is thrown - level - info:EMAIL_ALREADY_EXIST - The email with which you trying to register already exists
+2025-07-07 00:19:37,567 WARN i.p.m.e.CustomExceptionHandler [http-nio-8080-exec-7] BusinessException is thrown - level - warn:EMAIL_ALREADY_EXIST - The email with which you trying to register already exists
+2025-07-07 00:19:37,567 ERROR i.p.m.e.CustomExceptionHandler [http-nio-8080-exec-7] BusinessException is thrown - level - error:EMAIL_ALREADY_EXIST - The email with which you trying to register already exists
+2025-07-07 00:23:23,736 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-07 00:23:23,746 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-07-07 00:23:23,750 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-07 00:23:23,752 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-07-07 00:23:23,759 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
