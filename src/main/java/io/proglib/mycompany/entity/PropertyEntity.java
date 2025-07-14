@@ -17,11 +17,14 @@ public class PropertyEntity {
     @Column(name = "Property_Title", nullable = false)
     private String title;
     private String description;
-    private String ownerName;
-    @Column(name = "Property_Email",nullable = false)
-    private String ownerEmail;
     private Double price;
     private String address;
+
+    @ManyToOne/*many property belong to one user*/(fetch = FetchType.EAGER)//it will not fetch the data while fetching property
+    @JoinColumn(name="USER_ID",nullable = false)
+    private UserEntity userEntity;
+
+
 
 
 }

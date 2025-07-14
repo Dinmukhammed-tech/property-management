@@ -561,3 +561,8 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2025-07-12 18:57:16,755 WARN c.z.h.p.HikariPool [HikariPool-1:housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h4m42s493ms756µs100ns).
 2025-07-12 20:11:41,786 WARN c.z.h.p.HikariPool [HikariPool-1:housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m54s372ms406µs300ns).
 2025-07-12 22:53:18,191 WARN c.z.h.p.HikariPool [HikariPool-1:housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h24m36s287ms571µs).
+2025-07-12 23:11:56,544 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-12 23:11:56,557 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-07-12 23:11:56,572 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-12 23:11:56,584 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-07-12 23:11:56,588 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

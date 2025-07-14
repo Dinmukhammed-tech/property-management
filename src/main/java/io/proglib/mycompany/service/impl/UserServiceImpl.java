@@ -2,9 +2,11 @@ package io.proglib.mycompany.service.impl;
 
 import io.proglib.mycompany.converter.UserConverter;
 import io.proglib.mycompany.dto.UserDTO;
+import io.proglib.mycompany.entity.AddressEntity;
 import io.proglib.mycompany.entity.UserEntity;
 import io.proglib.mycompany.exception.BusinessException;
 import io.proglib.mycompany.exception.ErrorModel;
+import io.proglib.mycompany.repository.AddressRepository;
 import io.proglib.mycompany.repository.UserRepository;
 import io.proglib.mycompany.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,9 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     @Autowired
+    private AddressRepository addressRepository;
+
+    @Autowired
     private UserConverter userConverter;
 
     @Override
@@ -33,7 +38,22 @@ public class UserServiceImpl implements UserService {
             errorModelList.add(errorModel);
             throw new BusinessException(errorModelList);
         }
+
+
+
         UserEntity entity = userRepository.save(userConverter.convertDTOToEntity(userDTO));
+
+        AddressEntity addressEntity = new AddressEntity();
+        addressEntity.setHouseNo(userDTO.getHouseNo());
+        addressEntity.setStreet(userDTO.getStreet());
+        addressEntity.setCity(userDTO.getCity());
+        addressEntity.setCountry(userDTO.getCountry());
+        addressEntity.setPostalCode(userDTO.getPostalCode());
+        addressEntity.setUserEntity(entity);
+
+        addressRepository.save(addressEntity);
+
+
         return userConverter.convertEntityToDTO(entity);
     }
 
